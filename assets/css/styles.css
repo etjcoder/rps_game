@@ -1,3 +1,18 @@
-h1 {
-    color: brown;
+html {
+    margin: 30px;
+}
+
+
+/* Target multiple headings inside the jumbotron */
+.jumbotron h1, .heading-container {
+    text-align: center;
+}
+
+/* Apply some styles to the Rules line */
+.heading-container h3 {
+    background-color: lightslategrey;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
