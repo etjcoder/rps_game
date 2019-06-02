@@ -14,6 +14,7 @@
 </head>
 
 <body>
+
     <div class="container-fluid">
         <div class="jumbotron" id="rps-jumbotron">
             <h1>Welcome to Bootstrap RPS</h1>
@@ -29,6 +30,31 @@
             </div>
         </div>
     </div>
+    <div class="card-group" id="rps-card-group">
+        <!-- Card 1 -->
+        <div class="card">
+            <h4>Your Choice:</h4>
+            <hr>
+            <img src="assets/images/default.png" id="user-image" alt="default image">
+        </div>
+        <!-- Card 2 -->
+        <div class="card" id="center-card">
+            <h4>Current Score:</h4>
+            <hr>
+            <p>Wins: <strong><span id="win-count"></span></strong></p>
+            <p>Losses: <strong><span id="loss-count"></span></strong></p>
+            <p>Ties: <strong><span id="tie-count"></strong></span></p>
+            <button type="button" class="btn btn-danger" id="reset-button">Reset Score</button>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+            <h4>Computer Choice:</h4>
+            <hr>
+            <img src="assets/images/default.png" id="computer-image" alt="default image">
+        </div>
+    </div>
+
+
     <script src="assets/js/rps.js"></script>
 </body>
 
