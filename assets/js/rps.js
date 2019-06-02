@@ -27,25 +27,18 @@ var ties = 0;
 
 function gameStart(e) {
     if (e.key === 'r' || e.key === 'p' || e.key === 's') {
-        console.log('You pressed the ' + e.key + ' key!');
         rpsJumbotron.style.display = "none";
         rpsCardGroup.style.display = "flex";
         var computerGuess = computerPicker();
-        console.log("The computer chose " + computerGuess);
         var computerPicture = updatePicture(computerGuess);
-        console.log(computerPicture);
         compImg.src = computerPicture;
         userImg.src = updatePicture(e.key);
         updateScore(computerGuess, e.key);
 
     } else if (e.key === 'q') {
-        console.warn('You pressed the ' + e.key + ' key!');
         rpsJumbotron.style.display = "block";
         rpsCardGroup.style.display = "none";
         initializeScores();
-    }
-    else {
-        console.error('You pressed a bad key!');
     }
 }
 
